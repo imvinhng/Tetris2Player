@@ -1,3 +1,9 @@
+document.querySelector('#startGame').addEventListener('click', () => {
+    document.querySelectorAll('.player').forEach(player => {
+        player.style.display = 'block';
+    })
+    document.getElementById('menu').style.display = 'none';
+})
 
 function createPiece(type)
 {
